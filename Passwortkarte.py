@@ -136,7 +136,7 @@ def techcode_pdf(Bildsize, pc_file, speichernAls):
             d.text((text_x, text_y), f'{aktuellerText}', fill=(0, 0, 0), font=fnt)
 
     # Speichere das Bild
-    # img.show()
+    img.show()
     img.save(speichernAls + '.jpg')
 
 
