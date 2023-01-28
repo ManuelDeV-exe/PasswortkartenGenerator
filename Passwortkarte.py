@@ -140,7 +140,7 @@ def techcode_pdf(Bildsize, pc_file, speichernAls):
     img.save(speichernAls + '.jpg')
 
 
-save_pc("pc.txt", generate_password_card(16))
+# save_pc("pc.txt", generate_password_card(16))
 
 print(generate_password(load_pc('pc.txt'), 'test'))
 
