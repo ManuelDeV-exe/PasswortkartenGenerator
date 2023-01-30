@@ -44,7 +44,7 @@ def generate_password(pc, keyword):
     rows = len(pc)
     for row in range(len(keyword)):
         for col in range(len(head)):
-            if keyword[row] in head[col].lower():
+            if keyword[row].lower() in head[col].lower():
                 password += pc[row%rows][col]
                 break
     return password
@@ -142,6 +142,6 @@ def techcode_pdf(Bildsize, pc_file, speichernAls):
 
 # save_pc("pc.txt", generate_password_card(16))
 
-print(generate_password(load_pc('pc.txt'), 'test'))
+print(generate_password(load_pc('ffw_pc.txt'), 'WEB.de'))
 
-techcode_pdf((3508, 2480), 'pc.txt', 'PWCard')
+# techcode_pdf((3508, 2480), 'ffw_pc.txt', 'PWCard')
